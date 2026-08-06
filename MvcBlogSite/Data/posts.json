@@ -1,0 +1,25 @@
+[
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "Title": "Getting Started with ASP.NET Core",
+    "Content": "ASP.NET Core is a cross-platform, high-performance framework for building modern, cloud-based, Internet-connected applications. In this post, we will explore the basics of getting started with ASP.NET Core and how to create your first web application.",
+    "Author": "Inioluwa",
+    "Date": "2026-08-06"
+  },
+
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+    "Title": "Understanding Dependency Injection in ASP.NET Core",
+    "Content": "Dependency Injection (DI) is a design pattern that allows for better separation of concerns and easier testing. In this post, we will dive into the concept of dependency injection in ASP.NET Core and how to implement it in your applications.",
+    "Author": "Inioluwa",
+    "Date": "2026-08-07"
+  },
+
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+    "Title": "Building RESTful APIs with ASP.NET Core",
+    "Content": "ASP.NET Core provides a powerful framework for building RESTful APIs. In this post, we will explore the key concepts of RESTful API design and how to create a simple API using ASP.NET Core.",
+    "Author": "Precious",
+    "Date": "2026-08-08"
+  }
+]
