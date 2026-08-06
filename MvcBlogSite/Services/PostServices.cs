@@ -10,7 +10,7 @@ namespace MvcBlogSite.Services
         {
             string path = "Data/posts.json";
             string json = File.ReadAllText(path);
-            List<Posts> posts = JsonSerializer.Deserialize<Posts>>(json);
+            List<Posts> posts = JsonSerializer.Deserialize<List<Posts>>(json);
             return posts;
         }
     }
