@@ -1,11 +1,15 @@
 ﻿@model MvcBlogSite.Models.Post
 
-<h1>@Model.Title</h1>
+<div class="blog-header">
+    <h1>@Model.Title</h1>
+</div>
 
-<p>By @Model.Author on @Model.Date.ToString("MM-dd-yyyy")</p>
+<p class="post-meta">@Model.Author on @Model.Date.ToString("MM-dd-yyyy")</p>
 
-<div>
+<div class="post-body">
     @Model.Content
 </div>
 
-<a asp-controller="Posts" asp-action="Index">Back to all posts</a>
+<div class="post-back">
+    <a asp-controller="Posts" asp-action="Index">Back to all posts</a>
+</div>

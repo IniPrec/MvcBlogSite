@@ -21,5 +21,13 @@
     "Content": "ASP.NET Core provides a powerful framework for building RESTful APIs. In this post, we will explore the key concepts of RESTful API design and how to create a simple API using ASP.NET Core.",
     "Author": "Precious",
     "Date": "2026-08-08"
+  },
+
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+    "Title": "The Future of Artificial Intelligence in the Workplace",
+    "Content": "Artificial Intelligence (AI) is rapidly changing the way businesses operate. From automating routine tasks to providing data-driven insights, AI is helping organizations improve efficiency and make smarter decisions. One of the most significant benefits of AI is its ability to handle repetitive tasks. Activities such as data entry, customer support through chatbots, and document processing can now be completed with minimal human intervention. This allows employees to focus on more strategic and creative work. AI is also transforming decision-making processes. By analyzing large amounts of data, AI-powered systems can identify patterns and trends that might otherwise go unnoticed. Businesses can use these insights to improve customer experiences, optimize operations, and increase profitability.",
+    "Author": "Inioluwa",
+    "Date": "2026-08-09"
   }
 ]

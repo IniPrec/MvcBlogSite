@@ -1,23 +1,21 @@
 ﻿@model List<MvcBlogSite.Models.Post>
 
-<div class="container mt-4">
-    <h1 class="mb-4">Innie's Blog</h1>
+<div class="blog-header">
+    <h1>Welcome!</h1>
 </div>
 
-<ul>
-    @foreach (var post in Model) // loops through every post in the list the controller passed in. 'Model' is how Razor exposes the data.
+<div class="post-list">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search posts..." />
+
+    @foreach (var post in Model) 
     {
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <a asp-controller="Posts" asp-action="Details" asp-route="@post.Id">
-                        @post.Title
-                    </a>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                    By @post.Author on @post.Date.ToString("MM-dd-yyyy")
-                </h6>
+        <div class="post-entry">
+            <div class="post-title">
+                <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id">
+                    @post.Title
+                </a>
             </div>
+            <div class="post-meta">@post.Author on @post.Date.ToString("MM-dd-yyyy")</div>
         </div>
     }
-</ul>
+</div>
