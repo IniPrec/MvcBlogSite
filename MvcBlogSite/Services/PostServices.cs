@@ -6,11 +6,11 @@ namespace MvcBlogSite.Services
 {
     public class PostServices
     {
-        public List<Posts> GetAllPosts()
+        public List<Post> GetAllPosts()
         {
             string path = "Data/posts.json";
             string json = File.ReadAllText(path);
-            List<Posts> posts = JsonSerializer.Deserialize<List<Posts>>(json);
+            List<Post> posts = JsonSerializer.Deserialize<List<Post>>(json);
             return posts;
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace MvcBlogSite.Models
 {
-    public class Posts
+    public class Post
     {
         public Guid Id { get; set; }
         public string? Title { get; set; }

@@ -1,0 +1,13 @@
+﻿@model List<MvcBlogSite.Models.Post>
+
+<h1>Innie's Blog</h1>
+
+<ul>
+    @foreach (var post in Model) // loops through every post in the list the controller passed in. 'Model' is how Razor exposes the data.
+    {
+        <li>
+            <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id">@post.Title</a> @* tag helper, instead of hardcoding a URL. It generates the correct href automatically *@
+            <p>By @post.Author on @post.CreatedAt.ToString("MM dd, yyyy")</p>
+        </li>
+    }
+</ul>
