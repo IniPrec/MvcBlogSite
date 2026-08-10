@@ -26,8 +26,16 @@
   {
     "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
     "Title": "The Future of Artificial Intelligence in the Workplace",
-    "Content": "Artificial Intelligence (AI) is rapidly changing the way businesses operate. From automating routine tasks to providing data-driven insights, AI is helping organizations improve efficiency and make smarter decisions. One of the most significant benefits of AI is its ability to handle repetitive tasks. Activities such as data entry, customer support through chatbots, and document processing can now be completed with minimal human intervention. This allows employees to focus on more strategic and creative work. AI is also transforming decision-making processes. By analyzing large amounts of data, AI-powered systems can identify patterns and trends that might otherwise go unnoticed. Businesses can use these insights to improve customer experiences, optimize operations, and increase profitability.",
+    "Content": "Artificial Intelligence (AI) is rapidly changing the way businesses operate. From automating routine tasks to providing data-driven insights, AI is helping organizations improve efficiency and make smarter decisions. \nOne of the most significant benefits of AI is its ability to handle repetitive tasks. Activities such as data entry, customer support through chatbots, and document processing can now be completed with minimal human intervention. This allows employees to focus on more strategic and creative work. AI is also transforming decision-making processes. By analyzing large amounts of data, AI-powered systems can identify patterns and trends that might otherwise go unnoticed. Businesses can use these insights to improve customer experiences, optimize operations, and increase profitability.",
     "Author": "Inioluwa",
     "Date": "2026-08-09"
+  },
+
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afb1",
+    "Title": "Why Cybersecurity Matters More Than Ever",
+    "Content": "In today's digital world, cybersecurity is no longer just an IT concern; it is a business necessity. Organizations of all sizes are increasingly becoming targets of cyberattacks, making robust security practices essential. \nCybercriminals use various methods to gain unauthorized access to systems, including phishing emails, malware, and ransomware attacks. A single successful attack can result in financial losses, reputational damage, and the exposure of sensitive information. \nTo strengthen cybersecurity, businesses should implement key measures such as multi-factor authentication, regular software updates, employee awareness training, and data backup strategies. These foundational practices can significantly reduce security risks. \nEmployees also play a critical role in protecting organizational data. Understanding how to identify suspicious emails and adopting safe online habits can prevent many common security breaches. \nAs technology advances, so do cyber threats. Investing in cybersecurity today is one of the most effective ways to safeguard business continuity and customer trust.",
+    "Author": "Peter",
+    "Date": "2026-12-10"
   }
 ]
