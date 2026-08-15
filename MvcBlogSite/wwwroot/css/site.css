@@ -47,7 +47,7 @@ body {
 
 .container a {
     color: var(--color-text);
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .post-list {

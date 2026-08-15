@@ -13,16 +13,16 @@ namespace MvcBlogSite.Controllers
             _postServices = postServices;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Post> posts = _postServices.GetAllPosts();
+            List<Post> posts = await _postServices.GetAllPostsAsync();
             return View(posts);
         }
 
-        public IActionResult Details(Guid id)
+        public async Task<IActionResult> Details(Guid id)
         {
-            List<Post> posts = _postServices.GetAllPosts();
-            Post post = posts.FirstOrDefault(p => p.Id == id); // LINQ. Searches the list for the first post whose ID matches the provided ID. If no match is found, it returns null.
+            List<Post> posts = await _postServices.GetAllPostsAsync();
+            Post post = posts.FirstOrDefault(p => p.Id == id);
 
             if (post == null)
             {
