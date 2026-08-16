@@ -74,5 +74,12 @@ namespace MvcBlogSite.Controllers
             await _postServices.UpdatePostAsync(id, post);
             return RedirectToAction("Details", new { id = id });
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await _postServices.DeletePostAsync(id);
+            return RedirectToAction("Index");
+        }
     }
 }

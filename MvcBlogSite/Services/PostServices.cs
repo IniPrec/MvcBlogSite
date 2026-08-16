@@ -49,5 +49,20 @@ namespace MvcBlogSite.Services
             string path = _configuration["PostsFilePath"];
             await File.WriteAllTextAsync(path, json);
         }
+
+        public async Task DeletePostAsync(Guid id)
+        {
+            List<Post> posts = await GetAllPostsAsync();
+            Post postToDelete = posts.FirstOrDefault(p => p.Id == id);
+
+            if (postToDelete != null)
+            {
+                posts.Remove(postToDelete);
+            }
+
+            string json = JsonSerializer.Serialize(posts);
+            string path = _configuration["PostsFilePath"];
+            await File.WriteAllTextAsync(path, json);
+        }
     }
 }
