@@ -10,6 +10,8 @@
     @Model.Content
 </div>
 
-<div class="post-back">
-    <a asp-controller="Posts" asp-action="Index">Back to all posts</a>
+
+<div class="form-group">
+    <a asp-controller="Posts" asp-action="Edit" asp-route-id="@Model.Id" class="btn-publish">Edit this post</a>
+    <a asp-controller="Posts" asp-action="Index" class="btn-publish">Back to all posts</a>
 </div>

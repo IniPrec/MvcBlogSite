@@ -4,11 +4,13 @@
     <h1>Welcome!</h1>
 </div>
 
+<a asp-controller="Posts" asp-action="Create" class="btn-publish">Create a New Post</a>
+
 <div class="post-list">
     <input type="text" id="searchBox" class="search-box" placeholder="Search posts..." />
 
     @foreach (var post in Model) 
-    {
+     {
         <div class="post-entry">
             <div class="post-title">
                 <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id">

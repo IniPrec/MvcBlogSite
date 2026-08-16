@@ -31,5 +31,48 @@ namespace MvcBlogSite.Controllers
 
             return View(post);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost] // an attribute.
+        public async Task<IActionResult> Create(Post post) // model binding
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(post);
+            }
+            await _postServices.AddPostAsync(post);
+            return RedirectToAction("Index"); // after creating a post, redirect to the Index action to show the list of posts.
+        }
+
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            List<Post> posts = await _postServices.GetAllPostsAsync();
+            Post updatePost = posts.FirstOrDefault(p => p.Id == id);
+
+            if (updatePost == null)
+            {
+                return NotFound();
+            }
+
+            return View(updatePost);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Guid id, Post post)
+        {
+            ModelState.Remove("Author");
+
+            if (!ModelState.IsValid)
+            {
+                return View(post);
+            }
+
+            await _postServices.UpdatePostAsync(id, post);
+            return RedirectToAction("Details", new { id = id });
+        }
     }
 }

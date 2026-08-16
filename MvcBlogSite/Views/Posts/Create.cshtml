@@ -1,0 +1,32 @@
+﻿@model MvcBlogSite.Models.Post
+
+<div class="blog-header">
+    <h1>New Post</h1>
+</div>
+
+<div class="post-list">
+    <form asp-controller="Posts" asp-action="Create" method="post" class="post-form">
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-input" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Author"></label>
+            <input asp-for="Author" class="form-input" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Content"></label>
+            <textarea asp-for="Content" class="form-input" rows="8"></textarea>
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn-publish">Publish</button>
+            <a asp-controller="Posts" asp-action="Index" class="btn-cancel">Cancel</a>
+        </div>
+    </form>
+</div>
