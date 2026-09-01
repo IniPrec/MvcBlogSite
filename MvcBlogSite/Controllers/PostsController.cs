@@ -45,7 +45,7 @@ namespace MvcBlogSite.Controllers
                 return View(post);
             }
             await _postServices.AddPostAsync(post);
-            return RedirectToAction("Index"); 
+            return RedirectToAction("Details", new { id = post.Id }); 
         }
 
         public async Task<IActionResult> Edit(Guid id)
