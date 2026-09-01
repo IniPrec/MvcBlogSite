@@ -45,7 +45,7 @@ namespace MvcBlogSite.Controllers
                 return View(post);
             }
             await _postServices.AddPostAsync(post);
-            return RedirectToAction("Index"); // after creating a post, redirect to the Index action to show the list of posts.
+            return RedirectToAction("Index"); 
         }
 
         public async Task<IActionResult> Edit(Guid id)
